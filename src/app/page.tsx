@@ -1,4 +1,5 @@
 import HeroSlider from "@/components/HeroSlider";
+import ProductCategories from "@/components/ProductCategories";
 import StatsSection from "@/components/StatsSection";
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <>
       <HeroSlider />
       <StatsSection />
+      <ProductCategories />
     </>
   );
 };
