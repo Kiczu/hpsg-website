@@ -6,7 +6,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 const Slider = () => {
   return (
-    <section className="relative">
+    <section id="realizations" className="relative">
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
@@ -41,7 +41,7 @@ const Slider = () => {
 
               {/* Button */}
               <a
-                href="#realizacje"
+                href="#realizations"
                 className="pointer-events-auto inline-flex items-center justify-center rounded-full bg-black/70 hover:bg-black/80 transition-colors px-8 py-3 text-xs md:text-sm font-bold tracking-[0.16em]"
               >
                 ZOBACZ NASZE REALIZACJE

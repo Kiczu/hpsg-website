@@ -29,7 +29,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <section className="py-12">
+    <section id="stats" className="py-12">
       <div className="page-container">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 text-center">
           {stats.map((item) => (
@@ -39,10 +39,10 @@ const StatsSection = () => {
             >
               <div
                 className="relative 
-                          w-28 h-28       /* 112px na mobile */
-                          sm:w-32 sm:h-32 /* 128px na tablet */
-                          md:w-36 md:h-36 /* 144px na większe tablety */
-                          lg:w-40 lg:h-40 /* 160px na desktop - wygląda jak Twoje 200px */
+                          w-28 h-28
+                          sm:w-32 sm:h-32
+                          md:w-36 md:h-36 
+                          lg:w-40 lg:h-40 
                           mb-4"
               >
                 <Image
