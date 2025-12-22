@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { ROUTES } from "@/config/paths";
 
 const Footer = () => {
   return (
@@ -27,34 +29,34 @@ const Footer = () => {
           <div>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#about" className="hover:underline">
+                <Link href={ROUTES.about} className="hover:underline">
                   O firmie
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#products" className="hover:underline">
+                <Link href="#products" className="hover:underline">
                   Produkty
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="hover:underline">
+                <Link href="/blog" className="hover:underline">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#catalog" className="hover:underline">
+                <Link href="#catalog" className="hover:underline">
                   Pobierz broszurę produktową
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#offer" className="hover:underline">
+                <Link href="#offer" className="hover:underline">
                   Oferta
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" className="hover:underline">
+                <Link href="#services" className="hover:underline">
                   Usługi
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -77,7 +79,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* DOLNA BELKA */}
+      {/* BELOW BAR */}
       <div className="border-t border-white/20 mt-6">
         <div className="w-[90%] mx-auto py-4 flex flex-col gap-2 md:flex-row md:items-center md:justify-between text-xs text-white/80">
           <div className="flex flex-wrap gap-x-2 gap-y-1">
