@@ -1,0 +1,108 @@
+.legal-content {
+  --legal-indent: 2.5rem;
+  --marker-width: 3.25rem;
+
+  color: var(--foreground);
+}
+
+.legal-content :where(p, li) {
+  line-height: 1.75;
+}
+
+.legal-content a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-content :where(h1, h2, h3) {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.legal-content h1,
+.legal-content h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.legal-content h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.legal-content hr {
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.legal-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.legal-content th,
+.legal-content td {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 0.6rem 0.8rem;
+}
+
+.legal-content th {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.legal-content p {
+  margin: 0.35rem 0;
+  margin-left: var(--legal-indent);
+}
+
+.legal-content p:has(> strong:first-child) {
+  margin-left: 0;
+  padding-left: calc(var(--legal-indent) + var(--marker-width));
+  text-indent: calc(-1 * var(--marker-width));
+}
+
+.legal-content :where(ul, ol) {
+  margin: 0.5rem 0;
+  margin-left: var(--legal-indent);
+  padding-left: 1.5rem;
+}
+
+.legal-content ul {
+  list-style: disc;
+}
+
+.legal-content ol {
+  list-style: decimal;
+}
+
+.legal-content p:has(> strong:first-child) + :is(ul, ol) {
+  margin-left: calc(var(--legal-indent) + var(--marker-width));
+}
+
+.legal-content li {
+  margin: 6px 0;
+}
+
+.legal-content li > ul,
+.legal-content li > ol {
+  margin-top: 8px;
+}
+
+.legal-content blockquote {
+  margin: 0.5rem 0;
+  margin-left: calc(var(--legal-indent) + var(--marker-width));
+  padding: 0;
+  border-left: 0;
+  color: inherit;
+}
+
+.legal-content blockquote > ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: lower-alpha;
+}
+
+.legal-content blockquote > ol > li::marker {
+  content: counter(list-item, lower-alpha) ") ";
+  font-weight: 600;
+}
