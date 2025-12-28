@@ -102,7 +102,6 @@ const ContactSection = () => {
               <label className="block text-[16px] font-bold uppercase tracking-[0.08em] text-black">
                 IMIĘ I NAZWISKO
               </label>
-              p
               <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}

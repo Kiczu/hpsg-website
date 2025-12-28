@@ -2,32 +2,32 @@ import Image from "next/image";
 
 const categories = [
   {
-    title: "STANOWISKA POMIAROWE",
+    title: "Stanowiska pomiarowe",
     image: "/images/product-categories/01-measuring.png",
     alt: "Stanowiska pomiarowe",
   },
   {
-    title: "KLUCZE WYSOKO MOMENTOWE",
+    title: "Klucze wysokomomentowe",
     image: "/images/product-categories/02-torque.png",
-    alt: "Klucze wysoko momentowe",
+    alt: "Klucze wysokomomentowe",
   },
   {
-    title: "STANOWISKA ZROBOTYZOWANE",
+    title: "Stanowiska zrobotyzowane",
     image: "/images/product-categories/03-robotic.png",
     alt: "Stanowiska zrobotyzowane",
   },
   {
-    title: "STANOWISKA MONTAŻOWO–DIAGNOSTYCZNE",
+    title: "Stanowiska montażowo-diagnostyczne",
     image: "/images/product-categories/04-diagnostic.png",
     alt: "Stanowiska montażowo-diagnostyczne",
   },
   {
-    title: "STOŁY MONTAŻOWE I OSPRZĘT",
+    title: "Stoły montażowe i osprzęt",
     image: "/images/product-categories/05-tables.png",
     alt: "Stoły montażowe i osprzęt",
   },
   {
-    title: "INNE",
+    title: "Inne",
     image: "/images/product-categories/06-other.png",
     alt: "Inne rozwiązania",
   },
@@ -57,7 +57,7 @@ const ProductCategories = () => {
               <div className="absolute inset-0 bg-[#104F77]/53 group-hover:bg-[#0056A5]/35 transition-colors duration-200" />
 
               <div className="absolute inset-0 flex items-center justify-center px-4">
-                <p className="text-white text-sm sm:text-2xl lg:w-[65%] font-semibold uppercase text-center">
+                <p className="text-white text-xl sm:text-2xl lg:w-[65%] font-semibold text-center">
                   {item.title}
                 </p>
               </div>
