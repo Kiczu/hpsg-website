@@ -45,31 +45,30 @@ const HeroSlider = () => {
 
                   <div className="mx-auto mb-8 h-0.5 w-24 bg-white/80" />
 
-                  <div className="inline-flex items-stretch rounded-full bg-[#020b1c] shadow-[0_14px_40px_rgba(0,0,0,0.45)] overflow-hidden text-xs md:text-sm font-semibold uppercase tracking-[0.18em]">
-                    {/* Left */}
+                  {/* CTA buttons – separated + orange accent */}
+                  <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                     <a
                       href="#catalog"
-                      className="group relative flex items-center justify-center px-10 py-4"
+                      className="inline-flex items-center justify-center rounded-full px-10 py-4
+               text-xs md:text-sm font-semibold uppercase tracking-[0.18em]
+               bg-[#FF7A00] text-white
+               shadow-[0_14px_40px_rgba(0,0,0,0.45)]
+               transition-colors duration-200
+               hover:bg-[#FF8C1A] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                     >
-                      {/* overlay on hover – fills the ENTIRE left part */}
-                      <span className="absolute inset-0 bg-[#173763] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                      <span className="relative z-10 text-white">
-                        POBIERZ KATALOG
-                      </span>
+                      POBIERZ KATALOG
                     </a>
 
-                    {/* DIVIDER */}
-                    <div className="my-2 w-px bg-white/15" />
-
-                    {/* Right */}
                     <a
                       href="#products"
-                      className="group relative flex items-center justify-center px-10 py-4"
+                      className="inline-flex items-center justify-center rounded-full px-10 py-4
+               text-xs md:text-sm font-semibold uppercase tracking-[0.18em]
+               bg-[#FF7A00] text-white
+               shadow-[0_14px_40px_rgba(0,0,0,0.45)]
+               transition-colors duration-200
+               hover:bg-[#FF8C1A] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                     >
-                      <span className="absolute inset-0 bg-[#173763] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                      <span className="relative z-10 text-white">
-                        ZOBACZ PRODUKTY
-                      </span>
+                      ZOBACZ PRODUKTY
                     </a>
                   </div>
                 </div>
@@ -100,27 +99,30 @@ const HeroSlider = () => {
 
                   <div className="mx-auto mb-8 h-0.5 w-24 bg-white/80" />
 
-                  <div className="inline-flex items-stretch rounded-full bg-[#020b1c] shadow-[0_14px_40px_rgba(0,0,0,0.45)] overflow-hidden text-xs md:text-sm font-semibold uppercase tracking-[0.18em]">
+                  {/* CTA buttons – separated + orange accent */}
+                  <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                     <a
                       href="#catalog"
-                      className="group relative flex items-center justify-center px-10 py-4"
+                      className="inline-flex items-center justify-center rounded-full px-10 py-4
+               text-xs md:text-sm font-semibold uppercase tracking-[0.18em]
+               bg-[#FF7A00] text-white
+               shadow-[0_14px_40px_rgba(0,0,0,0.45)]
+               transition-colors duration-200
+               hover:bg-[#FF8C1A] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                     >
-                      <span className="absolute inset-0 bg-[#173763] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                      <span className="relative z-10 text-white">
-                        POBIERZ KATALOG
-                      </span>
+                      POBIERZ KATALOG
                     </a>
-
-                    <div className="my-2 w-px bg-white/15" />
 
                     <a
                       href="#products"
-                      className="group relative flex items-center justify-center px-10 py-4"
+                      className="inline-flex items-center justify-center rounded-full px-10 py-4
+               text-xs md:text-sm font-semibold uppercase tracking-[0.18em]
+               bg-[#FF7A00] text-white
+               shadow-[0_14px_40px_rgba(0,0,0,0.45)]
+               transition-colors duration-200
+               hover:bg-[#FF8C1A] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                     >
-                      <span className="absolute inset-0 bg-[#173763] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                      <span className="relative z-10 text-white">
-                        ZOBACZ PRODUKTY
-                      </span>
+                      ZOBACZ PRODUKTY
                     </a>
                   </div>
                 </div>
