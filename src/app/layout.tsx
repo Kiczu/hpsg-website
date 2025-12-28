@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,12 +10,19 @@ export const metadata: Metadata = {
     "Automatyzacja produkcji, stanowiska montażowe, diagnostyka, projektowanie i wdrożenia.",
 };
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins", // opcjonalnie, ale polecam
+  display: "swap",
+});
+
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="pl">
       <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className={`flex-1 ${poppins.className}`}>{children}</main>
         <Footer />
       </body>
     </html>
