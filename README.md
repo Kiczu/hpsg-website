@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HPSG Website
 
-## Getting Started
+Marketing website for **HPS Group (HPSG)** built with **Next.js (App Router)** and **Tailwind CSS**.
 
-First, run the development server:
+The project currently focuses on the **homepage (hero + sections)**. Backend/API (e.g. contact form handler) is planned and will be added later.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js `16.0.10`
+- React `19`
+- TypeScript
+- Tailwind CSS `v4`
+- Swiper (sliders)
+- `react-markdown` + `remark-gfm` (legal pages)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## What’s included
 
-To learn more about Next.js, take a look at the following resources:
+- **Homepage sections**: hero slider, stats, product categories, services, realizations slider, blog preview, contact section
+- **Blog**: `/blog` + `/blog/[slug]` (mock posts by default, optional WordPress integration)
+- **Legal pages**: Markdown-based pages + downloadable PDFs
+- **Contact form UI**: validation + honeypot, optional Turnstile widget (API endpoint TODO)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Getting started
 
-## Deploy on Vercel
+- Install: `npm install`
+- Dev: `npm run dev`
+- Build: `npm run build` → `npm run start`
+- Lint: `npm run lint`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Environment variables (optional)
+
+Create `.env.local` in the project root.
+
+- WordPress blog: `WORDPRESS_API_URL` (example: `https://example.com/wp-json/wp/v2`)
+- Turnstile: `NEXT_PUBLIC_TURNSTILE_SITE_KEY`
+
+---
+
+## Notes
+
+- Swiper can cause hydration mismatches in the App Router — hero slider uses `HeroSliderNoSSR` (`ssr: false`) to avoid SSR issues.
+- Legal PDFs expected at:
+  - `public/legal/polityka-prywatnosci.pdf`
+  - `public/legal/regulamin-serwisu.pdf`
+  - `public/legal/przetwarzanie-danych.pdf`
+
+---
+
+## Deployment
+
+Recommended: **Vercel** (set env vars in Project Settings if needed).
+
+---
+
+## Roadmap / TODO
+
+- Implement `POST /api/contact` (email sending + Turnstile verification)
+- Final content + imagery replacement
+- Optional: connect blog to WordPress + ensure safe HTML handling
+- SEO polish (OG tags, sitemap, robots, structured data)
+
+---
+
+## License
+
+TBD
