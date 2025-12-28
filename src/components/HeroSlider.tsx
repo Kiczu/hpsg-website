@@ -103,24 +103,14 @@ const HeroSlider = () => {
                   <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                     <a
                       href="#catalog"
-                      className="inline-flex items-center justify-center rounded-full px-10 py-4
-               text-xs md:text-sm font-semibold uppercase tracking-[0.18em]
-               bg-[#FF7A00] text-white
-               shadow-[0_14px_40px_rgba(0,0,0,0.45)]
-               transition-colors duration-200
-               hover:bg-[#FF8C1A] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                      className="inline-flex items-center justify-center rounded-full px-10 py-4 text-xs md:text-sm font-semibold uppercase tracking-[0.18em] bg-[#FF7A00] text-white shadow-[0_14px_40px_rgba(0,0,0,0.45)] transition-colors duration-200 hover:bg-[#FF8C1A] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                     >
                       POBIERZ KATALOG
                     </a>
 
                     <a
                       href="#products"
-                      className="inline-flex items-center justify-center rounded-full px-10 py-4
-               text-xs md:text-sm font-semibold uppercase tracking-[0.18em]
-               bg-[#FF7A00] text-white
-               shadow-[0_14px_40px_rgba(0,0,0,0.45)]
-               transition-colors duration-200
-               hover:bg-[#FF8C1A] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                      className="inline-flex items-center justify-center rounded-full px-10 py-4 text-xs md:text-sm font-semibold uppercase tracking-[0.18em] bg-[#FF7A00] text-white shadow-[0_14px_40px_rgba(0,0,0,0.45)] transition-colors duration-200 hover:bg-[#FF8C1A] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                     >
                       ZOBACZ PRODUKTY
                     </a>
